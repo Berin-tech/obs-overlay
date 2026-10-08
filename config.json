@@ -6,10 +6,10 @@
     {
       "id": "chat-bottom-left",
       "label": "Chat (bottom left)",
-      "x": "0%",
-      "y": "85%",
-      "w": "25%",
-      "h": "15%",
+      "x": "5%",
+      "y": "70%",
+      "w": "30%",
+      "h": "25%",
       "color": "#000000",
       "style": "solid",
       "visible": true
@@ -17,10 +17,10 @@
     {
       "id": "chat-bottom-right",
       "label": "Chat (bottom right)",
-      "x": "85%",
-      "y": "85%",
-      "w": "15%",
-      "h": "15%",
+      "x": "100%",
+      "y": "100%",
+      "w": "0%",
+      "h": "0%",
       "color": "#000000",
       "style": "solid",
       "visible": true
