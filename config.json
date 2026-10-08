@@ -1,0 +1,30 @@
+{
+  "refreshMs": 1000,
+  "width": 1920,
+  "height": 1080,
+  "masks": [
+    {
+      "id": "chat-bottom-left",
+      "label": "Chat (bottom left)",
+      "x": "0%",
+      "y": "85%",
+      "w": "25%",
+      "h": "15%",
+      "color": "#000000",
+      "style": "solid",
+      "visible": true
+    },
+    {
+      "id": "chat-bottom-right",
+      "label": "Chat (bottom right)",
+      "x": "85%",
+      "y": "85%",
+      "w": "15%",
+      "h": "15%",
+      "color": "#000000",
+      "style": "solid",
+      "visible": true
+    }
+  ],
+  "customHtml": ""
+}

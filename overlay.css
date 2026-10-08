@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: transparent;
+}
+
+#stage {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  pointer-events: none;
+}
+
+.mask {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.mask--solid {
+  background: #000000;
+}
+
+.mask--blur {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(10, 10, 10, 0.65);
+}
+
+#custom {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Debug mode (?debug=1) — alignment in OBS */
+body.debug {
+  background: rgba(0, 128, 255, 0.08);
+}
+
+body.debug #stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 96px 96px;
+  pointer-events: none;
+}
+
+body.debug .mask {
+  outline: 2px dashed rgba(255, 80, 80, 0.9);
+  outline-offset: -1px;
+}
+
+body.debug .mask::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font: 12px/1.2 "Segoe UI", system-ui, sans-serif;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
