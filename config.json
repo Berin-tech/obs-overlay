@@ -6,7 +6,7 @@
     {
       "id": "chat-bottom-left",
       "label": "Chat (bottom left)",
-      "x": "5%",
+      "x": "1%",
       "y": "70%",
       "w": "30%",
       "h": "25%",
