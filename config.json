@@ -26,5 +26,5 @@
       "visible": true
     }
   ],
-  "customHtml": ""
+  "customHtml": "<img src=\"images/twitch-banner.png\" style=\"position:absolute; left:0%; top:70%; width:25%; height:25%; object-fit:contain;\">"
 }
