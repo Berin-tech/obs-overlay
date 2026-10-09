@@ -147,27 +147,14 @@
 
       var el = document.createElement("div");
       el.className = "mask mask--" + (m.style === "blur" ? "blur" : "solid");
-//      el.dataset.label = m.label || m.id || "mask";
-
-//      var rect = resolveRect(m, w, h);
-//      el.style.left = rect.x + "px";
-//      el.style.top = rect.y + "px";
-//      el.style.width = rect.w + "px";
-//      el.style.height = rect.h + "px";
+      el.dataset.label = m.label || m.id || "mask";
 
       var rect = resolveRect(m, w, h);
-
-      el.dataset.label =
-        (m.label || m.id || "mask") +
-        " | X:" + Math.round(rect.x) +
-        " Y:" + Math.round(rect.y) +
-        " W:" + Math.round(rect.w) +
-        " H:" + Math.round(rect.h);
-
       el.style.left = rect.x + "px";
       el.style.top = rect.y + "px";
       el.style.width = rect.w + "px";
       el.style.height = rect.h + "px";
+
 
       if (m.style !== "blur" && m.color) {
         el.style.background = m.color;
